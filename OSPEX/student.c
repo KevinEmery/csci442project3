@@ -1,4 +1,5 @@
-/* This is the student's file for interacting with the GUI source code. There are
+/* This is the student's file for interacting with the GUI source 
+code. There are
 three pieces of information that the GUI needs to properly display the scheduling queues.
 These are global variables and their extern decleration can be found in the glo.h file. 
 1. An array of struct pi of HISTORY length. (HISTORY is a defined constant set to 50).
@@ -24,7 +25,16 @@ struct qh pQh[HISTORY][NR_SCHED_QUEUES];
 
 void studentInput (void){
 
-//printf("%d\n", _syscall(PM_PROC_NR, 44, &pInfo));
+message m;
+
+//m.m1_i1 = 44;
+//m.m1_p1 = (unsigned char*) pInfo;
+
+printf("User process: %d \n", m.m_source);
+
+_syscall(PM_PROC_NR, 44, &m);
+
+return;
 
 int i;
 
@@ -34,8 +44,6 @@ for(i=0;i<HISTORY;i++){
 	pInfoPtrs[i] = &pInfo[i][0]; /* Give these pointers to the scheduler so it knows where to copy the process tables to*/
 	pQhPtrs[i] = &pQh[i][0];
 }
-
-//_syscall(PM_PROC_NR, 44, &pInfoPtrs);
 
 /* Uncomment the following line to run the test processes */
 //procs(); 

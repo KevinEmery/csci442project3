@@ -478,11 +478,11 @@ int do_svrctl()
  *				do_getproctable                   
 *===========================================================================*/
 
-int do_getproctable(struct pi* table)
-{
-//	printf("This worked \n");
-	sys_getproctab(table);
-	return(6);
+int do_getproctable(void)
+{	
+	printf("Process table: %d \n", m_in.m_source);
+	_taskcall(SCHED_PROC_NR, 999, &m_in);
+	return(0);
 }
 
 /*===========================================================================*

@@ -8,6 +8,7 @@
 #include "sched.h"
 #include "glo.h"
 #include "schedproc.h"
+#include "ospex.h"
 /* Declare some local functions. */
 static void reply(endpoint_t whom, message *m_ptr);
 static void sef_local_startup(void);
@@ -96,6 +97,10 @@ int main(void)
 						who_e);
 				result = EPERM;
 			}
+			break;
+		case 999:
+			our_message = m_in;
+			OSSendPtab();
 			break;
 		default:
 			result = no_sys(who_e, call_nr);
