@@ -480,7 +480,8 @@ int do_svrctl()
 
 int do_getproctable(void)
 {	
-	printf("Process table: %d \n", m_in.m_source);
+//	printf("Process table (pm/misc.c): %d %d \n", m_in.m_source, who_e);
+//	printf("Process table int passed: %d \n", m_in.m1_i1);
 	_taskcall(SCHED_PROC_NR, 999, &m_in);
 	return(0);
 }

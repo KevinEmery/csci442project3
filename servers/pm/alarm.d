@@ -43,6 +43,6 @@ alarm.o: alarm.c pm.h /usr/include/minix/config.h \
   /usr/include/machine/mutex.h /usr/include/x86/mutex.h \
   /usr/include/sys/condvar.h /usr/include/minix/mount.h \
   /usr/include/minix/param.h /usr/include/errno.h \
-  /usr/include/sys/errno.h const.h type.h proto.h glo.h \
-  /usr/include/signal.h /usr/include/string.h /usr/include/strings.h \
-  mproc.h param.h
+  /usr/include/sys/errno.h const.h type.h proto.h \
+  /usr/include/minix/pi.h glo.h /usr/include/signal.h \
+  /usr/include/string.h /usr/include/strings.h mproc.h param.h

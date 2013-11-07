@@ -43,12 +43,13 @@ utility.o: utility.c pm.h /usr/include/minix/config.h \
   /usr/include/machine/mutex.h /usr/include/x86/mutex.h \
   /usr/include/sys/condvar.h /usr/include/minix/mount.h \
   /usr/include/minix/param.h /usr/include/errno.h \
-  /usr/include/sys/errno.h const.h type.h proto.h glo.h \
-  /usr/include/sys/resource.h /usr/include/minix/callnr.h \
-  /usr/include/signal.h mproc.h param.h /usr/include/string.h \
-  /usr/include/strings.h /usr/include/machine/archtypes.h \
-  /usr/src/kernel/const.h /usr/include/minix/bitmap.h \
-  /usr/src/kernel/config.h /usr/src/kernel/debug.h \
-  /usr/include/minix/debug.h /usr/src/kernel/type.h \
-  /usr/src/kernel/proc.h /usr/include/minix/portio.h \
-  /usr/src/kernel/priv.h /usr/include/minix/priv.h
+  /usr/include/sys/errno.h const.h type.h proto.h \
+  /usr/include/minix/pi.h glo.h /usr/include/sys/resource.h \
+  /usr/include/minix/callnr.h /usr/include/signal.h mproc.h param.h \
+  /usr/include/string.h /usr/include/strings.h \
+  /usr/include/machine/archtypes.h /usr/src/kernel/const.h \
+  /usr/include/minix/bitmap.h /usr/src/kernel/config.h \
+  /usr/src/kernel/debug.h /usr/include/minix/debug.h \
+  /usr/src/kernel/type.h /usr/src/kernel/proc.h \
+  /usr/include/minix/portio.h /usr/src/kernel/priv.h \
+  /usr/include/minix/priv.h

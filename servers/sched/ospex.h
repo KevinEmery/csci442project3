@@ -1,3 +1,3 @@
 #include "sched.h"
 
-void OSSendPtab(void);
+void OSSendPtab();

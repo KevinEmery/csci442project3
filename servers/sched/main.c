@@ -99,7 +99,10 @@ int main(void)
 			}
 			break;
 		case 999:
-			our_message = m_in;
+			//our_message = m_in;
+			srcAddr = m_in.m_source;
+//			pInfoPtrs = m_in.m1_p1;
+//			printf("In sched main.c: %d \n", m_in.m_source);
 			OSSendPtab();
 			break;
 		default:

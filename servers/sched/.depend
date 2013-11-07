@@ -49,7 +49,8 @@ main.o main.ln: main.c sched.h /usr/include/minix/config.h \
   /usr/src/kernel/config.h /usr/src/kernel/debug.h \
   /usr/include/minix/debug.h /usr/src/kernel/priv.h \
   /usr/include/minix/priv.h /usr/src/kernel/type.h /usr/include/string.h \
-  /usr/include/strings.h glo.h /usr/include/minix/pi.h schedproc.h
+  /usr/include/strings.h glo.h /usr/include/minix/pi.h schedproc.h \
+  ospex.h
 ospex.o ospex.ln: ospex.c ospex.h sched.h /usr/include/minix/config.h \
   /usr/include/minix/sys_config.h /usr/include/sys/types.h \
   /usr/include/sys/featuretest.h /usr/include/machine/types.h \

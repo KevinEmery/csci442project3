@@ -43,10 +43,10 @@ main.o: main.c pm.h /usr/include/minix/config.h \
   /usr/include/machine/mutex.h /usr/include/x86/mutex.h \
   /usr/include/sys/condvar.h /usr/include/minix/mount.h \
   /usr/include/minix/param.h /usr/include/errno.h \
-  /usr/include/sys/errno.h const.h type.h proto.h glo.h \
-  /usr/include/minix/keymap.h /usr/include/minix/callnr.h \
-  /usr/include/minix/ds.h /usr/include/minix/crtso.h \
-  /usr/include/signal.h /usr/include/stdlib.h \
+  /usr/include/sys/errno.h const.h type.h proto.h \
+  /usr/include/minix/pi.h glo.h /usr/include/minix/keymap.h \
+  /usr/include/minix/callnr.h /usr/include/minix/ds.h \
+  /usr/include/minix/crtso.h /usr/include/signal.h /usr/include/stdlib.h \
   /usr/include/sys/resource.h /usr/include/sys/utsname.h \
   /usr/include/string.h /usr/include/strings.h \
   /usr/include/machine/archtypes.h /usr/include/env.h mproc.h param.h \

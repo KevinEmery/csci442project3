@@ -262,6 +262,8 @@ void system_init(void)
   map(SYS_SCHEDULE, do_schedule);	/* reschedule a process */
   map(SYS_SCHEDCTL, do_schedctl);	/* change process scheduler */
 
+  map(SYS_GETRUNQHEAD, do_getrunqhead);	/* our kernel call to get run_q_head */
+
 }
 /*===========================================================================*
  *				get_priv				     *

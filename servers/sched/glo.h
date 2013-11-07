@@ -12,4 +12,6 @@ extern struct pi *pInfoPtrs[HISTORY];
 extern struct qh *pQhPtrs[HISTORY];
 extern int debug_trigger;
 
+int process_count;
+
 message our_message;

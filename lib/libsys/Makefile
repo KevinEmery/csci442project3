@@ -44,6 +44,7 @@ SRCS+=  \
 	sys_fork.c \
 	sys_getinfo.c \
 	sys_getsig.c \
+	sys_getrunqhead.c \
 	sys_hz.c \
 	sys_irqctl.c \
 	sys_kill.c \

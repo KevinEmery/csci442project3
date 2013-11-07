@@ -27,14 +27,12 @@ void studentInput (void){
 
 message m;
 
-//m.m1_i1 = 44;
-//m.m1_p1 = (unsigned char*) pInfo;
+//m.m1_i1 = SELF;
+m.m1_p1 = (char*) pInfoPtrs;
 
-printf("User process: %d \n", m.m_source);
+//printf("User process (student.c): %d %d \n", m.m_source, SELF);
 
 _syscall(PM_PROC_NR, 44, &m);
-
-return;
 
 int i;
 
@@ -46,10 +44,10 @@ for(i=0;i<HISTORY;i++){
 }
 
 /* Uncomment the following line to run the test processes */
-//procs(); 
+procs(); 
 
 /*Run this code to make sure all procs all killed after the simulation is complete */
-/* for(i=0;i<PROCNUM;i++){
+ for(i=0;i<PROCNUM;i++){
 	kill(pid_array[i]);
-}*/
+}
 }
